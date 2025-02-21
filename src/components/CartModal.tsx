@@ -9,7 +9,7 @@ const CartModal = () => {
 
     return (
         <div className="w-max absolute p-4 rounded-md shadow-lg flex flex-col
-        bg-white top-12 right-0 gap-6 z-20 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+        bg-white top-12 right-0 gap-6 z-40 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
         >
             {!cartItems ? (
                 <div> Cart is Empty</div>

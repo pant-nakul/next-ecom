@@ -80,7 +80,21 @@ const Footer = () => {
                 </div>
             </div>
             {/*BOTTOM*/}
-            <div></div>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-16">
+                <div className="">© {new Date().getFullYear()} TechCret Software Pvt. Ltd.</div>
+                <div className="">
+                    <div className="flex flex-col md:flex-row gap-8">
+                        <div className="">
+                            <span className="text-gray-500 mr-4">Language</span>
+                            <span className="font-medium">United States | English</span>
+                        </div>
+                        <div className="">
+                            <span className="text-gray-500 mr-4">Currency</span>
+                            <span className="font-medium">$ USD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

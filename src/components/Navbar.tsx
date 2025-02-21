@@ -11,7 +11,7 @@ const Navbar = () => {
             {/*MOBILE*/}
             <div className="h-full flex items-center justify-between md:hidden">
                 <Link href="/">
-                    <div className="text-2xl tracking-wider">LAMA</div>
+                    <div className="text-2xl tracking-wider">{process.env.APP_NAME}</div>
                 </Link>
                 {/*MENU*/}
                 <Menu/>
@@ -22,8 +22,8 @@ const Navbar = () => {
                 {/*LEFT*/}
                 <div className="w-1/3 flex items-center gap-8">
                     <Link href="/" className="flex items-center gap-3">
+                        <div className="text-2xl tracking-wider">{process.env.APP_NAME}</div>
                         <Image src="/logo.png" alt="Logo" width={24} height={24} />
-                        <div className="text-2xl tracking-wider">LAMA</div>
                     </Link>
                     <div className="hidden xl:flex gap-4">
                         <Link href="/">Homepage</Link>

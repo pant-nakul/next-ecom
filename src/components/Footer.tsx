@@ -10,7 +10,7 @@ const Footer = () => {
                 {/*LEFT*/}
                 <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8" >
                     <Link href="/">
-                        <div className="text-2xl tracking-wider">LAMA</div>
+                        <div className="text-2xl tracking-wider">{process.env.APP_NAME}</div>
                     </Link>
                     <p>3252 Beirut, Central Vista, Stockholm, CA 12345, United Kingdom</p>
                     <span className="font-semibold">nakul.paradox@gmail.com</span>

@@ -15,7 +15,6 @@ const SinglePage = () => {
                 <h1 className="text-4xl font-medium">Product Name</h1>
                 <p className="text-gray-500">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
-
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
                 </p>
                 <div className="h-[1px] bg-gray-200"/>
@@ -26,6 +25,55 @@ const SinglePage = () => {
                 <div className="h-[1px] bg-gray-200"/>
                 <CustomizeProducts/>
                 <Add/>
+                <div className="h-[1px] bg-gray-200"/>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p className="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+
+                </div>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p className="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+
+                </div>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p className="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+
+                </div>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p className="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+
+                </div>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p className="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+
+                </div>
+                <div className="text-sm">
+                    <h4 className="font-medium mb-4">Title</h4>
+                    <p className="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+
+                </div>
             </div>
         </div>
     )

@@ -2,7 +2,9 @@
 
 import React from 'react'
 import Image from "next/image";
+import {MediaItem} from "@wix/stores_products";
 
+/*
 const images = [
     {
         id:"1",
@@ -24,31 +26,32 @@ const images = [
         id:"5",
         url: "https://images.pexels.com/photos/104842/bmw-vehicle-ride-bike-104842.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
-
 ]
+*/
 
 
-const ProductImages = () => {
+const ProductImages = ({ items }: { items: MediaItem[] }) => {
 
+    console.log(items?.length);
     const [index, setIndex] = React.useState(0);
     return (
         <div className="">
             <div className="h-[500px] relative">
                 <Image
-                    src={images[index].url}
+                    src={items[index]?.image?.url!}
                     alt="main image"
                     fill
                     sizes={"30vw"}
                     className="object-cover rounded-md"
-                    />
+                />
             </div>
             <div className="flex justify-between gap-4 mt-8">
-                {images.map((image, index) => (
-                    <div key={image.id} className="w-1/4 h-32 relative gap-4 mt-8 cursor-pointer"
-                        onClick={() => setIndex(index)}
+                {items.map((item: any, index: number) => (
+                    <div key={item._id} className="w-1/4 h-32 relative gap-4 mt-8 cursor-pointer"
+                         onClick={() => setIndex(index)}
                     >
                         <Image
-                            src={image.url}
+                            src={item?.image?.url}
                             alt="main image"
                             fill
                             sizes={"30vw"}

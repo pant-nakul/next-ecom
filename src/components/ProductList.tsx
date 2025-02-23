@@ -15,8 +15,6 @@ const ProductList = async ({categoryId, limit}: { categoryId: string; limit?: nu
         .limit(limit || PRODUCT_PER_PAGE)
         .find();
 
-    console.log(res.items[0])
-
     return (
         <div className="mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap">
             {res.items.map((product : products.Product) => (

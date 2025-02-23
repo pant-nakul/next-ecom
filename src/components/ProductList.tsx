@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {wixClientServer} from "@/lib/wixClientServer";
 import {products} from "@wix/stores";
+import DOMPurify from "dompurify";
 
 const PRODUCT_PER_PAGE = 20
 
@@ -43,7 +44,9 @@ const ProductList = async ({categoryId, limit}: { categoryId: string; limit?: nu
                         <span className="font-semibold">{product.name}</span>
                         <span className="font-medium">{product.priceData?.formatted?.price}</span>
                     </div>
-                    <div className="text-sm text-gray-500">{product.description}</div>
+                    <div className="text-sm text-gray-500"
+
+                    >{product.description}</div>
                     <button type="button" className="rounded-2xl ring-1 ring-lama w-max
                     text-xs py-2 px-4 text-lama hover:bg-lama hover:text-white">
                         Add to Cart

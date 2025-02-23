@@ -24,19 +24,20 @@ const ProductList = async ({categoryId, limit}: { categoryId: string; limit?: nu
                 key={product._id}>
                     <div className="relative w-full h-80">
                         <Image
-                            src="https://images.pexels.com/photos/2307303/pexels-photo-2307303.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                            src={product.media?.mainMedia?.image?.url || "/product.png" }
                             alt={"logo"}
                             fill sizes={"25vw"}
                             className="absolute object-cover rounded-md z-10 hover:opacity-0
                            transition-opacity easy duration-500"
                         />
-                        <Image
-                            src="https://images.pexels.com/photos/1176618/pexels-photo-1176618.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                        {product.media?.items && <Image
+                            src={product.media?.items[1].image?.url || "/product.png"}
                             alt={"logo"}
                             fill sizes={"25vw"}
                             className="absolute object-cover rounded-md z-10 hover:opacity-0
                            transition-opacity easy duration-500"
-                        />
+                        />}
+
                     </div>
                     <div className="flex justify-between">
                         <span className="font-semibold">{product.name}</span>

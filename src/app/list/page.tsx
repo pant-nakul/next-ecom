@@ -30,7 +30,7 @@ const ListPage = async (searchParams:any) => {
             {/*PRODUCTLIST*/}
             <h1 className="mt-12 text-xl font-semibold">{"Shoes for you!"}</h1>
             <Suspense fallback={"Loading..."}>
-                <ProductList categoryId={category.collection?._id || "00000000-000000-000000-000000000001"} searchParams={searchParams} />
+                <ProductList categoryId={category.collection?._id || process.env.ALL_PRODUCTS_CATEGORY_ID} searchParams={searchParams} />
             </Suspense>
         </div>
     )

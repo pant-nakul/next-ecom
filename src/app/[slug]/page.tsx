@@ -17,13 +17,13 @@ const SinglePage = async ({params}: { params: { slug: string } }) => {
     }
 
     const product = products?.items[0]!
-    console.log(product)
+    console.log(product.productOptions)
 
     return (
         <div className="flex flex-col lg:flex-row gap-16 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-32 relative">
             {/*IMAGE*/}
             <div className="w-full lg:w-1/2 lg:sticky top-20 h-max">
-                <ProductImages items={product.media?.items}/>
+                { product?.media?.items &&  <ProductImages items={product.media?.items}/> }
             </div>
             {/*TEXT*/}
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
@@ -39,7 +39,9 @@ const SinglePage = async ({params}: { params: { slug: string } }) => {
                     </div>
                 )}
                 <div className="h-[1px] bg-gray-200"/>
-                <CustomizeProducts/>
+                {product?._id && product.variants && product.productOptions &&
+                    <CustomizeProducts productId={product._id} variants={product.variants}
+                                       productOptions={product.productOptions}/>}
                 <Add/>
                 <div className="h-[1px] bg-gray-200"/>
                 {product?.additionalInfoSections?.map((section: any) =>
